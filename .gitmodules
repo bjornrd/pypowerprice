@@ -1,0 +1,3 @@
+[submodule "pyentsoe"]
+	path = pyentsoe
+	url = git@github.com:bjornrd/pyentsoe.git
