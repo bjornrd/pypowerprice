@@ -1,7 +1,10 @@
 import PySide6
 from PySide6 import QtCore, QtWidgets, QtGui
 
-class ApplicationMainWindow(QtWidgets.QMainWindow):
+from ui.ui_appmainwindow import Ui_MainWindow
 
+class ApplicationMainWindow(QtWidgets.QMainWindow):
     def __init__(self):
-        super().__init__()
+        super(ApplicationMainWindow, self).__init__()
+        self.ui = Ui_MainWindow()
+        self.ui.setupUi(self)
